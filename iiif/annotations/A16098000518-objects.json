@@ -1,0 +1,132 @@
+{
+ "@context": "http://iiif.io/api/presentation/3/context.json",
+ "id": "iiif/annotations/A16098000518-objects.json",
+ "type": "AnnotationPage",
+ "items": [
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000518/index1",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Ses blaauwe schorteldoeken<br>\n<span>Modernized Label: </span>zes blauw schorteldoeken</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000518",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3212,3402,1101,189"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000518/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>en vaatwerch<br>\n<span>Modernized Label: </span>een vaatwerk</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000518",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3300,427,938,136"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000518/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een manshembden<br>\n<span>Modernized Label: </span>een mannenhemden</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000518",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3222,3616,1275,146"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000518/index4",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht peiningen<br>\n<span>Modernized Label: </span>acht penningen</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000518",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=1121,2079,436,99"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000518/index5",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee slaaplakens<br>\n<span>Modernized Label: </span>twee slaaplakens</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000518",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3202,3533,887,132"
+    }
+   }
+  }
+ ]
+}

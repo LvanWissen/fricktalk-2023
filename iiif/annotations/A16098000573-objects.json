@@ -1,0 +1,107 @@
+{
+ "@context": "http://iiif.io/api/presentation/3/context.json",
+ "id": "iiif/annotations/A16098000573-objects.json",
+ "type": "AnnotationPage",
+ "items": [
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000573/index1",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Albastert soutvaetje<br>\n<span>Modernized Label: </span>een albasten zoutvaatje</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000573",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=887,287,871,163"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000573/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Drie schaeltjens<br>\n<span>Modernized Label: </span>drie schaaltjes</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000573",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=926,383,1123,180"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000573/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een distel<br>\n<span>Modernized Label: </span>een distel</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000573",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=806,2112,794,125"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000573/index4",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een sausiertje<br>\n<span>Modernized Label: </span>een sauciertje</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000573",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=926,383,1123,180"
+    }
+   }
+  }
+ ]
+}

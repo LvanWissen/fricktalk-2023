@@ -1,0 +1,107 @@
+{
+ "@context": "http://iiif.io/api/presentation/3/context.json",
+ "id": "iiif/annotations/A16098000274-objects.json",
+ "type": "AnnotationPage",
+ "items": [
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000274/index1",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>xviC tien gedruekt<br>\n<span>Modernized Label: </span>vijftien reken</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000274",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3249,1664,682,135"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000274/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>de netre<br>\n<span>Modernized Label: </span>de netten</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000274",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=2989,310,948,130"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000274/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een bijbel<br>\n<span>Modernized Label: </span>een Bijbel</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000274",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=717,450,1162,170"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000274/index4",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>nieuwe overkettingh<br>\n<span>Modernized Label: </span>nieuwe ketting</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000274",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=1286,156,1083,133"
+    }
+   }
+  }
+ ]
+}

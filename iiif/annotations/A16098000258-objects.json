@@ -1,0 +1,107 @@
+{
+ "@context": "http://iiif.io/api/presentation/3/context.json",
+ "id": "iiif/annotations/A16098000258-objects.json",
+ "type": "AnnotationPage",
+ "items": [
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000258/index1",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000258",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=939,909,1185,132"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000258/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>den aetsten<br>\n<span>Modernized Label: </span>de mate</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000258",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=959,1088,1164,105"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000258/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000258",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=939,1323,1184,112"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000258/index4",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000258",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=958,1528,1131,149"
+    }
+   }
+  }
+ ]
+}

@@ -22,6 +22,7 @@ def main(
     nameslocationsfile: str = None,
     canvasmetadatafile: str = None,
     matcheditemsfile: str = None,
+    htrobjectsfile: str = None,
 ):
 
     manifest = createManifest(
@@ -30,6 +31,7 @@ def main(
         nameslocationsfile,
         canvasmetadatafile,
         matcheditemsfile,
+        htrobjectsfile,
     )
 
     with open("iiif/manifest.json", "w") as outfile:
@@ -42,6 +44,7 @@ def createManifest(
     nameslocationsfile: str = None,
     canvasmetadatafile: str = None,
     matcheditemsfile: str = None,
+    htrobjectsfile: str = None,
 ):
 
     manifest = {
@@ -146,6 +149,12 @@ def createManifest(
     else:
         matcheditems = dict()
 
+    if htrobjectsfile:
+        with open(htrobjectsfile) as infile:
+            htrobjectsdata = json.load(infile)
+    else:
+        htrobjectsdata = dict()
+
     for fn in sorted(os.listdir(imagefolder)):
         imagepath = os.path.join(imagefolder, fn)
 
@@ -164,6 +173,9 @@ def createManifest(
 
         # PersonNames and Locations have been selected by AAA
         nameslocations = nameslocationsdata.get(fn, [])
+
+        # Objects from the HTR
+        htrobjects = htrobjectsdata.get(fn, [])
 
         # Metadata from AAA
         canvasmeta = canvasmetadata.get(fn)
@@ -217,6 +229,7 @@ def createManifest(
             nameslocations,
             metadata=metadata,
             matcheditems=matcheditems,
+            htrobjects=htrobjects,
         )
         items.append(canvas)
 
@@ -232,6 +245,7 @@ def getCanvas(
     canvasid: str = None,
     metadata: list = [],
     matcheditems: dict = None,
+    htrobjects: list = None,
 ) -> dict:
 
     _, filename = os.path.split(imagepath)
@@ -283,6 +297,21 @@ def getCanvas(
 
         annotations.append(ap)
 
+    # htr objects (via Analiticcl GA)
+
+    if htrobjects:
+
+        ap = getAnnotationPage(
+            target=canvasid,
+            baseFilename=baseFilename,
+            motivation="commenting",
+            annopageid=f"iiif/annotations/{baseFilename}-objects.json",
+            htrobjects=htrobjects,
+            embedded=False,
+        )
+
+        annotations.append(ap)
+
     canvas["annotations"] = annotations
 
     # These are already calculated in the painting annotation
@@ -301,6 +330,7 @@ def getAnnotationPage(
     annotationpath: str = None,
     nameslocations: list = None,
     matcheditems: dict = None,
+    htrobjects: list = None,
     embedded: bool = True,
 ) -> dict:
 
@@ -315,7 +345,12 @@ def getAnnotationPage(
     elif annotationpath:
         _, filename = os.path.split(annotationpath)
         baseFilename, _ = os.path.splitext(filename)
-    elif annotationpath is None and imagepath is None and nameslocations is None:
+    elif (
+        annotationpath is None
+        and imagepath is None
+        and nameslocations is None
+        and htrobjects is None
+    ):
         return {}
 
     annotationPage = {
@@ -544,6 +579,55 @@ def getAnnotationPage(
 
         annotationPage["items"] = items
 
+    # This is data coming from automatic object detection on the HTR using Analiticcl in the GA project
+    if htrobjects:
+        items = []
+
+        for n, a in enumerate(htrobjects, 1):
+
+            targetselector = {
+                "id": target,
+                "selector": {
+                    "type": "FragmentSelector",
+                    "value": f"xywh={a['coords']}",
+                },
+            }
+
+            properties = {
+                "Original label": a["object_name_original"],
+                "Modernized label": a["object_name_modern"],
+            }
+
+            value = "<br>\n".join(
+                f"<span>{key.title()}: </span>{value}"
+                for key, value in properties.items()
+                if value
+            )
+
+            body = [
+                {
+                    "type": "TextualBody",
+                    "language": "nl",
+                    "value": f"<p><b>Object detection</b><br>{value}</p>",
+                },
+                {
+                    "type": "TextualBody",
+                    "purpose": "tagging",  # for a nice tag!
+                    "value": a["type"],
+                },
+            ]
+
+            anno = getAnnotation(
+                target=targetselector,
+                motivation=motivation,
+                body=body,  # already a list
+                annoid=nsAnno.term(f"{baseFilename}/index{n}"),
+            )
+
+            items.append(anno)
+
+        annotationPage["items"] = items
+
     if embedded:
         return annotationPage
     else:
@@ -644,5 +728,6 @@ if __name__ == "__main__":
         nameslocationsfile="data/2408_nameslocations.json",
         canvasmetadatafile="data/2408_canvasmetadata.json",
         matcheditemsfile="data/2408_itemsmetadata.json",
+        htrobjectsfile="data/2408_objectshtr.json",
     )
 
