@@ -364,7 +364,7 @@ def getAnnotationPage(
                 }
 
                 bodyValue = "\n".join([i["text"] for i in a["elements"]])
-                if bodyValue.strip() is "":  # not interested in empty anno
+                if bodyValue.strip() == "":  # not interested in empty anno
                     continue
 
                 body = []
@@ -506,11 +506,25 @@ def getAnnotationPage(
                 },
             }
 
+            properties = {
+                "Name": a["label"],
+                "URI": f'<a href="{a["id"]}">{a["id"]}</a>',
+                "Bredius excerpt": f'<a href="{a["bredius"][0]}">{a["bredius"][0]} ({a["bredius"][1]})</a>'
+                if a.get("bredius")
+                else None,
+            }
+
+            value = "<br>\n".join(
+                f"<span>{key.title()}: </span>{value}"
+                for key, value in properties.items()
+                if value
+            )
+
             body = [
                 {
                     "type": "TextualBody",
                     "language": "nl",
-                    "value": f'<p><b>Index</b><br>{a["label"]}</p>',
+                    "value": f"<p><b>Index</b><br>{value}</p>",
                 },
                 {
                     "type": "TextualBody",
