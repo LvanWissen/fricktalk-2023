@@ -621,7 +621,7 @@ def getAnnotationPage(
                 target=targetselector,
                 motivation=motivation,
                 body=body,  # already a list
-                annoid=nsAnno.term(f"{baseFilename}/index{n}"),
+                annoid=nsAnno.term(f"{baseFilename}/object{n}"),
             )
 
             items.append(anno)
