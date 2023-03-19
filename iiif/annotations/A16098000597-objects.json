@@ -24,38 +24,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000597",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=956,3554,1150,120"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000597/index2",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000597",
-    "selector": {
-     "type": "FragmentSelector",
      "value": "xywh=1072,2063,638,126"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000597/index3",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000597/index2",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -75,6 +50,31 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=860,2340,1221,161"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000597/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000597",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=956,3554,1150,120"
     }
    }
   },

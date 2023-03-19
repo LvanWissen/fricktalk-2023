@@ -12,6 +12,56 @@
     {
      "type": "TextualBody",
      "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>thien komt<br>\n<span>Modernized Label: </span>tien kom</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=845,702,1141,143"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=886,1061,1252,134"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
      "value": "<p><b>Object detection</b><br><span>Original Label: </span>een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
@@ -30,7 +80,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index2",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index4",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -50,56 +100,6 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=965,2486,997,136"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index3",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>thien komt<br>\n<span>Modernized Label: </span>tien kom</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=845,702,1141,143"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000224/index4",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3120,1828,1220,150"
     }
    }
   },
@@ -149,7 +149,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3118,2505,1218,166"
+     "value": "xywh=879,3158,1121,168"
     }
    }
   },
@@ -174,7 +174,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=879,3158,1121,168"
+     "value": "xywh=3104,1014,1242,180"
     }
    }
   },
@@ -212,7 +212,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
      "type": "TextualBody",
@@ -224,7 +224,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3104,1014,1242,180"
+     "value": "xywh=3120,1828,1220,150"
     }
    }
   },
@@ -237,7 +237,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
      "type": "TextualBody",
@@ -249,7 +249,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000224",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=886,1061,1252,134"
+     "value": "xywh=3118,2505,1218,166"
     }
    }
   }

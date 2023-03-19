@@ -12,7 +12,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>en Atemamenten<br>\n<span>Modernized Label: </span>een testament</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>oude schilderijen<br>\n<span>Modernized Label: </span>oude schilderijen</p>"
     },
     {
      "type": "TextualBody",
@@ -24,13 +24,63 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3270,2837,980,179"
+     "value": "xywh=944,315,1010,178"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index2",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een scharffbort<br>\n<span>Modernized Label: </span>een scherfbord</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=946,528,1105,148"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index3",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een kleijn stuxje<br>\n<span>Modernized Label: </span>een klein stukje</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=957,1814,1150,121"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index4",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -55,14 +105,14 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index3",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index5",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een testament<br>\n<span>Modernized Label: </span>een testament</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>den penningh<br>\n<span>Modernized Label: </span>de penning</p>"
     },
     {
      "type": "TextualBody",
@@ -74,13 +124,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3041,3442,1073,132"
+     "value": "xywh=3125,912,1108,138"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index4",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index6",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -105,32 +155,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index5",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>oude schilderijen<br>\n<span>Modernized Label: </span>oude schilderijen</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=944,315,1010,178"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index6",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index7",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -150,31 +175,6 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=2996,2163,1240,149"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000358/index7",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>den penningh<br>\n<span>Modernized Label: </span>de penning</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3125,912,1108,138"
     }
    }
   },
@@ -212,7 +212,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een scharffbort<br>\n<span>Modernized Label: </span>een scherfbord</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>en Atemamenten<br>\n<span>Modernized Label: </span>een testament</p>"
     },
     {
      "type": "TextualBody",
@@ -224,7 +224,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=946,528,1105,148"
+     "value": "xywh=3270,2837,980,179"
     }
    }
   },
@@ -262,7 +262,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>een kleijn stuxje<br>\n<span>Modernized Label: </span>een klein stukje</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een testament<br>\n<span>Modernized Label: </span>een testament</p>"
     },
     {
      "type": "TextualBody",
@@ -274,7 +274,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000358",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=957,1814,1150,121"
+     "value": "xywh=3041,3442,1073,132"
     }
    }
   }

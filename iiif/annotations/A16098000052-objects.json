@@ -12,7 +12,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>pack klederen<br>\n<span>Modernized Label: </span>pak klederen</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een stuck<br>\n<span>Modernized Label: </span>een stuk</p>"
     },
     {
      "type": "TextualBody",
@@ -24,7 +24,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3068,1824,1457,183"
+     "value": "xywh=3080,1132,1051,167"
     }
    }
   },
@@ -37,7 +37,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Neusdoeck<br>\n<span>Modernized Label: </span>een neusdoek</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Drij stucken<br>\n<span>Modernized Label: </span>drie stukken</p>"
     },
     {
      "type": "TextualBody",
@@ -49,7 +49,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3041,1644,766,148"
+     "value": "xywh=3101,1273,685,145"
     }
    }
   },
@@ -112,6 +112,31 @@
     {
      "type": "TextualBody",
      "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Neusdoeck<br>\n<span>Modernized Label: </span>een neusdoek</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3041,1644,766,148"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index6",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
      "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee beffen<br>\n<span>Modernized Label: </span>twee beffen</p>"
     },
     {
@@ -130,31 +155,6 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index6",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een graeuw lakene<br>\n<span>Modernized Label: </span>een grauw laken</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3235,1976,1124,127"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index7",
    "type": "Annotation",
    "motivation": "commenting",
@@ -162,7 +162,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>pack klederen<br>\n<span>Modernized Label: </span>pak klederen</p>"
     },
     {
      "type": "TextualBody",
@@ -174,63 +174,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=2652,2012,545,141"
+     "value": "xywh=3068,1824,1457,183"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index8",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Oostindisch koffertje<br>\n<span>Modernized Label: </span>Oostindische koffertje</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3138,2303,1170,169"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index9",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>en Testament<br>\n<span>Modernized Label: </span>een testament</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=2670,2873,424,82"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index10",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -255,14 +205,14 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index11",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index9",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Drij stucken<br>\n<span>Modernized Label: </span>drie stukken</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een graeuw lakene<br>\n<span>Modernized Label: </span>een grauw laken</p>"
     },
     {
      "type": "TextualBody",
@@ -274,7 +224,57 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3101,1273,685,145"
+     "value": "xywh=3235,1976,1124,127"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index10",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=2652,2012,545,141"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000052/index11",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Oostindisch koffertje<br>\n<span>Modernized Label: </span>Oostindische koffertje</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3138,2303,1170,169"
     }
    }
   },
@@ -312,7 +312,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een stuck<br>\n<span>Modernized Label: </span>een stuk</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>en Testament<br>\n<span>Modernized Label: </span>een testament</p>"
     },
     {
      "type": "TextualBody",
@@ -324,7 +324,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000052",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3080,1132,1051,167"
+     "value": "xywh=2670,2873,424,82"
     }
    }
   }

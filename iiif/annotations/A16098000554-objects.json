@@ -12,7 +12,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een kleijn tobbetje<br>\n<span>Modernized Label: </span>een klein tobbetje</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee ijser<br>\n<span>Modernized Label: </span>twee ijzeren</p>"
     },
     {
      "type": "TextualBody",
@@ -24,38 +24,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000554",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=793,1290,1181,147"
+     "value": "xywh=807,628,997,147"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index2",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>glas seven<br>\n<span>Modernized Label: </span>glas seef</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000554",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=917,2412,1115,126"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index3",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -80,32 +55,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index4",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee ijser<br>\n<span>Modernized Label: </span>twee ijzeren</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000554",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=807,628,997,147"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index5",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index3",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -130,7 +80,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index6",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index4",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -150,6 +100,56 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=778,1040,1366,186"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index5",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een kleijn tobbetje<br>\n<span>Modernized Label: </span>een klein tobbetje</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000554",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=793,1290,1181,147"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000554/index6",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>glas seven<br>\n<span>Modernized Label: </span>glas seef</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000554",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=917,2412,1115,126"
     }
    }
   }

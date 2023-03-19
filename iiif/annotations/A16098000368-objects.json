@@ -24,7 +24,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=2994,2982,1314,138"
+     "value": "xywh=928,178,1158,180"
     }
    }
   },
@@ -49,7 +49,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3008,1867,1208,152"
+     "value": "xywh=975,942,1183,127"
     }
    }
   },
@@ -74,7 +74,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3016,194,1258,143"
+     "value": "xywh=1000,1422,907,115"
     }
    }
   },
@@ -87,7 +87,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obbigatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
      "type": "TextualBody",
@@ -99,7 +99,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3037,622,1273,176"
+     "value": "xywh=994,2373,819,130"
     }
    }
   },
@@ -149,7 +149,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=1000,1422,907,115"
+     "value": "xywh=964,2949,1270,144"
     }
    }
   },
@@ -174,7 +174,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=2993,2520,1233,147"
+     "value": "xywh=3016,194,1258,143"
     }
    }
   },
@@ -187,7 +187,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obbigatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
      "type": "TextualBody",
@@ -199,7 +199,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=975,942,1183,127"
+     "value": "xywh=3037,622,1273,176"
     }
    }
   },
@@ -237,6 +237,31 @@
     {
      "type": "TextualBody",
      "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3008,1867,1208,152"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000368/index11",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
      "value": "<p><b>Object detection</b><br><span>Original Label: </span>half pet<br>\n<span>Modernized Label: </span>half putten</p>"
     },
     {
@@ -250,31 +275,6 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=3034,2141,1212,121"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000368/index11",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=964,2949,1270,144"
     }
    }
   },
@@ -299,7 +299,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=928,178,1158,180"
+     "value": "xywh=2993,2520,1233,147"
     }
    }
   },
@@ -324,7 +324,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000368",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=994,2373,819,130"
+     "value": "xywh=2994,2982,1314,138"
     }
    }
   }

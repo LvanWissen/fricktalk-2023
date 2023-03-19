@@ -24,63 +24,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=783,1641,1328,159"
+     "value": "xywh=694,375,1264,127"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index2",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3190,1679,1651,154"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index3",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=834,1995,1238,147"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index4",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -105,32 +55,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index5",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>vier pen<br>\n<span>Modernized Label: </span>vier pen</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=3240,2365,1530,132"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index6",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index3",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -155,7 +80,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index7",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index4",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -174,20 +99,20 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=694,375,1264,127"
+     "value": "xywh=783,1641,1328,159"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index8",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index5",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een Obligatie<br>\n<span>Modernized Label: </span>een obligatie</p>"
     },
     {
      "type": "TextualBody",
@@ -199,13 +124,13 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=3231,2545,995,112"
+     "value": "xywh=834,1995,1238,147"
     }
    }
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index9",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index6",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -225,6 +150,81 @@
     "selector": {
      "type": "FragmentSelector",
      "value": "xywh=3232,606,1093,116"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index7",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3190,1679,1651,154"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index8",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>vier pen<br>\n<span>Modernized Label: </span>vier pen</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3240,2365,1530,132"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000183/index9",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>acht pen<br>\n<span>Modernized Label: </span>acht pen</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000183",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=3231,2545,995,112"
     }
    }
   }

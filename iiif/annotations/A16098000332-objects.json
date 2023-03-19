@@ -12,7 +12,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>dertien penningen<br>\n<span>Modernized Label: </span>dertien penningen</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>eenigh out kuijpers<br>\n<span>Modernized Label: </span>enig oud kuipen</p>"
     },
     {
      "type": "TextualBody",
@@ -24,7 +24,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=1027,2658,1029,102"
+     "value": "xywh=966,174,1034,168"
     }
    }
   },
@@ -37,7 +37,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee dissels<br>\n<span>Modernized Label: </span>twee dissel</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een kopere bekken<br>\n<span>Modernized Label: </span>een koperen bekken</p>"
     },
     {
      "type": "TextualBody",
@@ -49,7 +49,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=929,982,985,126"
+     "value": "xywh=484,325,388,88"
     }
    }
   },
@@ -87,6 +87,31 @@
     {
      "type": "TextualBody",
      "language": "nl",
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee houte tappen<br>\n<span>Modernized Label: </span>twee hout trap</p>"
+    },
+    {
+     "type": "TextualBody",
+     "purpose": "tagging",
+     "value": "Object"
+    }
+   ],
+   "target": {
+    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
+    "selector": {
+     "type": "FragmentSelector",
+     "value": "xywh=482,454,436,102"
+    }
+   }
+  },
+  {
+   "@context": "http://iiif.io/api/presentation/3/context.json",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000332/index5",
+   "type": "Annotation",
+   "motivation": "commenting",
+   "body": [
+    {
+     "type": "TextualBody",
+     "language": "nl",
      "value": "<p><b>Object detection</b><br><span>Original Label: </span>tweehoute hamersen<br>\n<span>Modernized Label: </span>twaalf hamer</p>"
     },
     {
@@ -105,7 +130,7 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000332/index5",
+   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000332/index6",
    "type": "Annotation",
    "motivation": "commenting",
    "body": [
@@ -130,31 +155,6 @@
   },
   {
    "@context": "http://iiif.io/api/presentation/3/context.json",
-   "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000332/index6",
-   "type": "Annotation",
-   "motivation": "commenting",
-   "body": [
-    {
-     "type": "TextualBody",
-     "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Een kopere bekken<br>\n<span>Modernized Label: </span>een koperen bekken</p>"
-    },
-    {
-     "type": "TextualBody",
-     "purpose": "tagging",
-     "value": "Object"
-    }
-   ],
-   "target": {
-    "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
-    "selector": {
-     "type": "FragmentSelector",
-     "value": "xywh=484,325,388,88"
-    }
-   }
-  },
-  {
-   "@context": "http://iiif.io/api/presentation/3/context.json",
    "id": "https://data.goldenagents.org/datasets/dh2020/annotation/A16098000332/index7",
    "type": "Annotation",
    "motivation": "commenting",
@@ -162,7 +162,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>eenigh out kuijpers<br>\n<span>Modernized Label: </span>enig oud kuipen</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee dissels<br>\n<span>Modernized Label: </span>twee dissel</p>"
     },
     {
      "type": "TextualBody",
@@ -174,7 +174,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=966,174,1034,168"
+     "value": "xywh=929,982,985,126"
     }
    }
   },
@@ -187,7 +187,7 @@
     {
      "type": "TextualBody",
      "language": "nl",
-     "value": "<p><b>Object detection</b><br><span>Original Label: </span>Twee houte tappen<br>\n<span>Modernized Label: </span>twee hout trap</p>"
+     "value": "<p><b>Object detection</b><br><span>Original Label: </span>dertien penningen<br>\n<span>Modernized Label: </span>dertien penningen</p>"
     },
     {
      "type": "TextualBody",
@@ -199,7 +199,7 @@
     "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000332",
     "selector": {
      "type": "FragmentSelector",
-     "value": "xywh=482,454,436,102"
+     "value": "xywh=1027,2658,1029,102"
     }
    }
   }
