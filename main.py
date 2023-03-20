@@ -9,11 +9,11 @@ from PIL import Image as pil_image
 
 iiif_prezi3_context = "http://iiif.io/api/presentation/3/context.json"
 
-nsCanvas = Namespace("https://data.goldenagents.org/datasets/dh2020/canvas/")
+nsCanvas = Namespace("https://data.goldenagents.org/datasets/fricktalk2023/canvas/")
 nsAnnotationPage = Namespace(
-    "https://data.goldenagents.org/datasets/dh2020/annotationpage/"
+    "https://data.goldenagents.org/datasets/fricktalk2023/annotationpage/"
 )
-nsAnno = Namespace("https://data.goldenagents.org/datasets/dh2020/annotation/")
+nsAnno = Namespace("https://data.goldenagents.org/datasets/fricktalk2023/annotation/")
 
 
 def main(
@@ -52,9 +52,9 @@ def createManifest(
             "http://www.w3.org/ns/anno.jsonld",
             "http://iiif.io/api/presentation/3/context.json",
         ],
-        "id": "https://lvanwissen.github.io/ga-dh2020-demo/iiif/manifest.json",
+        "id": "https://lvanwissen.github.io/fricktalk-2023/iiif/manifest.json",
         "type": "Manifest",
-        "label": {"en": ["Golden Agents DH2020 Demo"]},
+        "label": {"en": ["Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023"]},
         "summary": "Annotation demo, showing the benefits of cross-institutional collaboration",
         "metadata": [
             {
@@ -75,10 +75,10 @@ def createManifest(
                     ]
                 },
             },
-            {"label": {"en": ["Creator"]}, "value": {"en": [""]}},
-            {"label": {"en": ["Contributor"]}, "value": {"en": [""]}},
+            {"label": {"en": ["Creator"]}, "value": {"en": ["Leon van Wissen"]}},
+            {"label": {"en": ["Contributor"]}, "value": {"en": ["Golden Agents project"]}},
             {"label": {"en": ["Language"]}, "value": {"en": ["English"]}},
-            {"label": {"en": ["Date Statement"]}, "value": {"en": ["2020"]}},
+            {"label": {"en": ["Date Statement"]}, "value": {"en": ["2023"]}},
             {"label": {"en": ["Description"]}, "value": {"en": ["DescriptionValue"]}},
             {
                 "label": {"en": ["Collection"]},
@@ -96,7 +96,7 @@ def createManifest(
                 },
             },
             {"label": {"en": ["Other Identifier"]}, "value": {"en": ["doi?"]}},
-            {"label": {"en": ["Record Created"]}, "value": {"en": ["2020-07-20"]}},
+            {"label": {"en": ["Record Created"]}, "value": {"en": ["2023-03-21"]}},
             {
                 "label": {"en": ["Holding Institution"]},
                 "value": {"en": ["Golden Agents"]},
@@ -123,7 +123,7 @@ def createManifest(
         },
         "behavior": ["individuals"],
         "start": {
-            "id": "https://data.goldenagents.org/datasets/dh2020/canvas/A16098000033",
+            "id": "https://data.goldenagents.org/datasets/fricktalk2023/canvas/A16098000033",
             "type": "Canvas",
         },
         "items": [],
