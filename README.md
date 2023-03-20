@@ -1,4 +1,4 @@
-# Golden Agents DH2020 demo
+# Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023
 
 | License     |                                                                                                                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
