@@ -4,8 +4,8 @@
 <head>
   <title>Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023</title>
   <meta name="description"
-    content="Interactive demo accompanying the DH2020 paper 'The Montias Case: an experiment with data reconciliation and provenance between research and cultural heritage institutions'">
-  <meta name="keywords" content="golden agents, dh2020, digital humanities, linked open data, web annotations, mirador">
+    content="Interactive demonstration of a prototype of an online viewer that integrates the Michael Montias database with information from other sources, including the Getty Provenance Index and original scanned records.">
+  <meta name="keywords" content="golden agents, digital humanities, linked open data, web annotations, mirador">
   <meta charset="utf-8">
   <meta name="google-site-verification" content="mtboJeE3REK-_E7Wzx5Gsi6JlXl6MeZ7yhGXEMZBjzQ" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
         License</a>.
       <br>
       Source code and data for this demo can be found in this repository: <a
-        href="https://github.com/lvanwissen/ga-dh2020-demo/"
+        href="https://github.com/lvanwissen/fricktalk-2023/"
         class="external">https://github.com/lvanwissen/fricktalk-2023/</a>. For questions regarding this demo,
       please contact: <a href="mailto:l.vanwissen@uva.nl">l.vanwissen@uva.nl</a>.</p>
   </div>
@@ -49,11 +49,40 @@
   <div class="body">
     <span>
       <h2>Introduction</h2>
-      <i>For background information and references, see our <a href="https://dh2020.adho.org/wp-content/uploads/2020/07/137_TheMontiasCaseanexperimentwithdatareconciliationandprovenancebetweenresearchandculturalheritageinstitutions.html" class="external">paper</a></i>.
+      <p><i>
+        This demo is an extended version of: 
+        
+        <ul>
+          <li>Leon van Wissen, Chiara Latronico, Sandra van Ginhoven, Veruska Zamborlini (2020). The Montias Case: an experiment with data 
+            reconciliation and provenance between research and cultural heritage institutions. In: <a class="external" href="https://dh2020.adho.org/wp-content/uploads/2020/07/137_TheMontiasCaseanexperimentwithdatareconciliationandprovenancebetweenresearchandculturalheritageinstitutions.html">Book of Abstracts DH2020</a>, ADHO. And the accompanying <a class="external" href="https://doi.org/10.5281/zenodo.7326555">code and data</a>.</li>
+        </ul>
+  
+         New in this demo are:
+        <ol>
+          <li>Permalinks (URIs) to Persons and Locations from the Amsterdam City Archives index</li>
+          <li>Annotations showing the output of the Golden Agents automatic object detection</li>
+          <li>Links to the Bredius Notes of the RKD</li>
+        </ol></i>
+      </p>
     </span>
 
-    <p>The demo shows the intersection of datasets the <a href="https://www.goldenagents.org/" class="external">Golden
-        Agents project</a> is working with, as shown on top of a single archival book (NA 2408) from the <a
+    <p>
+      The demo showcases the intersection of datasets on probate inventories used in the Golden Agents project, displayed on a 
+      single archival book/collection from the notarial archives of the <a
+      href="https://archief.amsterdam/" class="external">Amsterdam City Archives</a>. The book contains notarial deeds
+      from around 1648, describing the contents of houses for legal documentation purposes. The datasets include an index provided by the Amsterdam City Archives, an HTR-output
+      provided by the Transkribus tool, and references to inventories and items from John Michael Montias, which are now found in the Getty
+      Provenance Index and the Frick Collection's Montias Database. 
+      
+      These datasets were connected using the Lenticular Lenses tool,
+      enabling researchers to assess the validity of the transcriptions and claims made on top of the descriptions. By bringing
+      these datasets together, researchers can gain necessary context and highlight differences in spelling and classification 
+      resulting from changing interpretation strategies. The demo highlights the possibilities and ease of working with archival 
+      material by transparently showing the resources from various content providers on top of each other.
+    </p>
+
+    <p>The demo shows shows the intersection of datasets on probate inventories from the <a href="https://www.goldenagents.org/" class="external">Golden
+        Agents project</a> on top of a single archival book (NA 2408) from the <a
         href="https://archief.amsterdam/" class="external">Amsterdam City Archives</a>. The demo is built with Mirador
       version 3 and uses the iiif Presentation API version 3.0. The images that are shown are coming from a static
       source, but can be served by a iiif-server, serving the image API.
@@ -65,7 +94,7 @@
       of a house are described, as part of a legal documentation of someones belongings and therefore possible
       inheritance. Every notarial deed in this book consists of one or multiple pages and therefore scans. This
       information is coming from the <b>(1) index on this book</b> that the Amsterdam City Archives provide, in which
-      they already identified the type of deed, its date, the persons that are mentioned, and the respective pages it is
+      they already identified the type of deed, its date, the persons and locations that are mentioned, and the respective pages it is
       listed on. Secondly, separate from this, an <b>(2) HTR-output</b> is provided through the Transkribus tool, that
       gives the transcription of every text line it has automatically identified.
     </p>
@@ -76,15 +105,19 @@
       contributed his initial work to the Getty Research Institute in Los Angeles and later continued his work at The
       Frick Collection in New York. Although sharing the same starting point, the two datasets he left behind at the
       respective institutes with provenance information on the probate inventories' owners and their belongings were
-      each expanded, complemented, and corrected separately. Nowadays the data can be found in the <b>(3) <a
-          href="https://piprod.getty.edu/starweb/pi/servlet.starweb?path=pi/pi.web" class="external">Getty Provenance
-          Index</a></b> and in the <b>(4) <a href="https://research.frick.org/montias" class="external">Frick
-          Collection's Montias Database of 17th Century Dutch Art Inventories</a></b>. We connected the inventory
-      descriptions from these datasets to the index of the Amsterdam City Archive by matching on date and owners. The
+      each expanded, complemented, and corrected separately. Nowadays the data can be found in the <b>(3a) <a href="https://research.frick.org/montias" class="external">Frick
+          Collection's Montias Database of 17th Century Dutch Art Inventories</a></b> and in the <b>(3b) <a
+            href="https://piprod.getty.edu/starweb/pi/servlet.starweb?path=pi/pi.web" class="external">Getty Provenance
+            Index</a></b>. Inventory
+      descriptions from these datasets are connected to the index of the Amsterdam City Archive by matching on date and owners. The
       items identified in these datasets are connected to the HTR-annotations by matching on item transcription. The in
       the Golden Agents project developed tool <a
         href="http://2018.dhbenelux.org/wp-content/uploads/sites/8/2018/05/Al-Idrissou-Chiara-Latronico_GoldenAgentsLenticularLenses_DHBenelux2018.pdf"
         class="external">Lenticular Lenses</a> was used for this.
+    </p>
+
+    <p>
+      Additionally, and new in this demo, the <b>(4) <a href="https://www.goldenagents.org/" class="external">Golden Agents project</a></b> provides even more enrichments to this data, such as an automatic object detection on the textual material, as well as pointers to the notes of Abraham Bredius as kept in the <b>(5) <a href="https://rkd.nl/nl/projecten-en-publicaties/projecten/915-brediusaantekeningen" class="external">RKD Netherlands Institute for Art History</a></b>.
     </p>
 
     <p>
@@ -101,23 +134,9 @@
       resources from various content provides on top of each other.
     </p>
 
-    <p>
-      This demo is an extended version of: 
-      
-      <ul>
-        <li>Leon van Wissen, Chiara Latronico, Sandra van Ginhoven, Veruska Zamborlini (2020). The Montias Case: an experiment with data 
-          reconciliation and provenance between research and cultural heritage institutions. In: <a class="external" href="https://dh2020.adho.org/wp-content/uploads/2020/07/137_TheMontiasCaseanexperimentwithdatareconciliationandprovenancebetweenresearchandculturalheritageinstitutions.html">Book of Abstracts DH2020</a>, ADHO. And the accompanying <a class="external" href="https://doi.org/10.5281/zenodo.7326555">demo</a>.</li>
-      </ul>
 
-       New in this demo are:
-      <ul>
-        <li>Permalinks (URIs) to Persons and Locations from the Amsterdam City Archives index</li>
-        <li>Annotations showing the output of the Golden Agents automatic object detection</li>
-        <li>Links to the Bredius Notes of the RKD</li>
-        </ul>
-    </p>
 
-    <p>Click the eye icon ('Highlight all') in the annotation view to show all annotations on a page.</p>
+    
 
 
 
@@ -128,7 +147,7 @@
     <p>
       N.B.: Using <a href="https://projectmirador.org/" class="external">Mirador v3.3</a>.
       Images served as static (image API level 0). You can try the
-      <a href="https://lvanwissen.github.io/ga-dh2020-demo/iiif/manifest.json" class="external">manifest.json</a> in any
+      <a href="https://lvanwissen.github.io/fricktalk-2023/iiif/manifest.json" class="external">manifest.json</a> in any
       viewer that supports annotations and the iiif Presentation API 3.0 (though you might need to fix the relative URIs
       in the manifest). Not all pages have been transcribed (through
       HTR), and not all listed record have an equal entry in the datasets of the Getty Provenance Index and the Frick's
@@ -137,6 +156,8 @@
       therefore be missing or are wrongly matched. Due to the high number of annotations per Canvas, navigating the page
       can be slow.
     </p>
+
+    <p>Click the eye icon ('Highlight all') in the annotation view to show all annotations on a page.</p>
   </div>
   <div id="mirador"></div>
 
