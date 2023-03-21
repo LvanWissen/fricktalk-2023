@@ -3,6 +3,8 @@
 
 For background information and references, see this [repository](https://github.com/LvanWissen/ga-dh2020-demo) and this [paper](https://dh2020.adho.org/wp-content/uploads/2020/07/137_TheMontiasCaseanexperimentwithdatareconciliationandprovenancebetweenresearchandculturalheritageinstitutions.html).
 
+Presentation slides available here: [slides.pdf](slides.pdf)
+
 This demo is an updated and extended version of an earlier proof of concept. It shows shows the intersection of datasets on probate inventories from the Golden Agents project (https://www.goldenagents.org/) on top of a single archival book (NA 2408) from the Amsterdam City Archives (https://archief.amsterdam/). The demo is built with Mirador version 3 and uses the iiif Presentation API version 3.0. The images that are shown are coming from a static source, but can be served by a iiif-server, serving the image API.
 
 New in this version is the addition of: 
