@@ -1,5 +1,6 @@
 # Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7757527.svg)](https://doi.org/10.5281/zenodo.7757527)
+
 
 For background information and references, see this [repository](https://github.com/LvanWissen/ga-dh2020-demo) and this [paper](https://dh2020.adho.org/wp-content/uploads/2020/07/137_TheMontiasCaseanexperimentwithdatareconciliationandprovenancebetweenresearchandculturalheritageinstitutions.html).
 
