@@ -15,6 +15,8 @@ nsAnnotationPage = Namespace(
 )
 nsAnno = Namespace("https://data.goldenagents.org/datasets/fricktalk2023/annotation/")
 
+GHPREFIX = "https://lvanwissen.github.io/fricktalk-2023/"
+
 
 def main(
     imagefolder: str,
@@ -52,7 +54,7 @@ def createManifest(
             "http://www.w3.org/ns/anno.jsonld",
             "http://iiif.io/api/presentation/3/context.json",
         ],
-        "id": "https://lvanwissen.github.io/fricktalk-2023/iiif/manifest.json",
+        "id": f"{GHPREFIX}iiif/manifest.json",
         "type": "Manifest",
         "label": {
             "en": [
@@ -119,14 +121,14 @@ def createManifest(
         ],
         "logo": [
             {
-                "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png",
+                "id": f"{GHPREFIX}assets/img/logo-golden-agents.png",
                 "type": "Image",
                 "format": "image/png",
             }
         ],
         "thumbnail": [
             {
-                "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png",
+                "id": f"{GHPREFIX}assets/img/logo-golden-agents.png",
                 "type": "Image",
                 "format": "image/png",
             }
@@ -176,6 +178,7 @@ def createManifest(
 
     for fn in sorted(os.listdir(imagefolder)):
         imagepath = os.path.join(imagefolder, fn)
+        imagepath = os.path.join(GHPREFIX, imagepath)
 
         baseFilename, _ = os.path.splitext(fn)
 
@@ -238,7 +241,7 @@ def createManifest(
                     metadata.append(
                         {
                             "label": {"en": [k]},
-                            "value": {"en": [v] if type(v) == str else v},
+                            "value": {"en": [v] if type(v) is str else v},
                         }
                     )
 
@@ -295,7 +298,7 @@ def getCanvas(
             target=canvasid,
             baseFilename=baseFilename,
             motivation="commenting",
-            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-index.json",
+            annopageid=f"{GHPREFIX}iiif/annotations/{baseFilename}-index.json",
             nameslocations=nameslocations,
             embedded=False,
         )
@@ -308,7 +311,7 @@ def getCanvas(
         ap = getAnnotationPage(
             target=canvasid,
             motivation="supplementing",
-            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-htr.json",
+            annopageid=f"{GHPREFIX}iiif/annotations/{baseFilename}-htr.json",
             annotationpath=annotationpath,
             matcheditems=matcheditems,
             embedded=False,
@@ -324,7 +327,7 @@ def getCanvas(
             target=canvasid,
             baseFilename=baseFilename,
             motivation="commenting",
-            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-objects.json",
+            annopageid=f"{GHPREFIX}iiif/annotations/{baseFilename}-objects.json",
             htrobjects=htrobjects,
             embedded=False,
         )
@@ -360,7 +363,7 @@ def getAnnotationPage(
     elif annopageid is None and annotationpath:
         _, filename = os.path.split(annotationpath)
         baseFilename, _ = os.path.splitext(filename)
-        annopageid = "https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{basefilename}.json"
+        annopageid = f"{GHPREFIX}iiif/annotations/{baseFilename}.json"
     elif annotationpath:
         _, filename = os.path.split(annotationpath)
         baseFilename, _ = os.path.splitext(filename)
@@ -410,7 +413,7 @@ def getAnnotationPage(
                     continue
 
                 targetselector = {
-                    "id": target,
+                    "source": target,
                     "selector": {
                         "type": "SvgSelector",
                         "value": getSVG(coordinates, color=color),
@@ -443,7 +446,7 @@ def getAnnotationPage(
                             "label": matchedItemGetty["label"],
                             "transcription": matchedItemGetty["transcription"],
                             "type": (
-                                f'Schilderij [<a href="http://vocab.getty.edu/aat/300177435">AAT</a>]'
+                                'Schilderij [<a href="http://vocab.getty.edu/aat/300177435">AAT</a>]'
                                 if matchedItemGetty["type"] == "Schilderij"
                                 else matchedItemGetty["type"]
                             ),
@@ -557,7 +560,7 @@ def getAnnotationPage(
         for n, a in enumerate(nameslocations, 1):
 
             targetselector = {
-                "id": target,
+                "source": target,
                 "selector": {
                     "type": "FragmentSelector",
                     "value": f"xywh={a['coords']}",
@@ -611,7 +614,7 @@ def getAnnotationPage(
         for n, a in enumerate(htrobjects, 1):
 
             targetselector = {
-                "id": target,
+                "source": target,
                 "selector": {
                     "type": "FragmentSelector",
                     "value": f"xywh={a['coords']}",
@@ -657,7 +660,7 @@ def getAnnotationPage(
         return annotationPage
     else:
 
-        with open(annopageid, "w") as outfile:
+        with open(annopageid.replace(GHPREFIX, ""), "w") as outfile:
             json.dump(annotationPage, outfile, indent=1)
 
         return {
@@ -675,7 +678,7 @@ def getAnnotation(
     annoid: str = None,
 ) -> dict:
 
-    if motivation == "painting" and imagepath and type(target) != dict:
+    if motivation == "painting" and imagepath and type(target) is not dict:
 
         _, filename = os.path.split(imagepath)
         baseFilename, ext = os.path.splitext(filename)
@@ -683,7 +686,7 @@ def getAnnotation(
         if annoid is None:
             annoid = nsAnno.term(baseFilename)
 
-        with pil_image.open(imagepath) as img:
+        with pil_image.open(imagepath.replace(GHPREFIX, "")) as img:
             (w, h) = img.size
             height = h
             width = w
