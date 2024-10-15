@@ -54,7 +54,11 @@ def createManifest(
         ],
         "id": "https://lvanwissen.github.io/fricktalk-2023/iiif/manifest.json",
         "type": "Manifest",
-        "label": {"en": ["Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023"]},
+        "label": {
+            "en": [
+                "Exploring 17th-Century Dutch Domestic Interiors Digitally - Frick Art Reference Library talk 2023"
+            ]
+        },
         "summary": "Annotation demo, showing the benefits of cross-institutional collaboration",
         "metadata": [
             {
@@ -76,7 +80,10 @@ def createManifest(
                 },
             },
             {"label": {"en": ["Creator"]}, "value": {"en": ["Leon van Wissen"]}},
-            {"label": {"en": ["Contributor"]}, "value": {"en": ["Golden Agents project"]}},
+            {
+                "label": {"en": ["Contributor"]},
+                "value": {"en": ["Golden Agents project"]},
+            },
             {"label": {"en": ["Language"]}, "value": {"en": ["English"]}},
             {"label": {"en": ["Date Statement"]}, "value": {"en": ["2023"]}},
             {"label": {"en": ["Description"]}, "value": {"en": ["DescriptionValue"]}},
@@ -205,9 +212,9 @@ def createManifest(
 
             # Frick inventory
             if "frick" in canvasmeta:
-                md[
-                    "The Frick Collection id"
-                ] = f"<a href={canvasmeta['frick']['url']}>{canvasmeta['frick']['identifier']}</a>"
+                md["The Frick Collection id"] = (
+                    f"<a href={canvasmeta['frick']['url']}>{canvasmeta['frick']['identifier']}</a>"
+                )
                 if canvasmeta["frick"].get("owners"):
                     md["Owners (Frick)"] = canvasmeta["frick"]["owners"]
                 if canvasmeta["frick"].get("appraisers"):
@@ -276,7 +283,7 @@ def getCanvas(
             target=canvasid,
             baseFilename=baseFilename,
             motivation="commenting",
-            annopageid=f"iiif/annotations/{baseFilename}-index.json",
+            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-index.json",
             nameslocations=nameslocations,
             embedded=False,
         )
@@ -289,7 +296,7 @@ def getCanvas(
         ap = getAnnotationPage(
             target=canvasid,
             motivation="supplementing",
-            annopageid=f"iiif/annotations/{baseFilename}-htr.json",
+            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-htr.json",
             annotationpath=annotationpath,
             matcheditems=matcheditems,
             embedded=False,
@@ -305,7 +312,7 @@ def getCanvas(
             target=canvasid,
             baseFilename=baseFilename,
             motivation="commenting",
-            annopageid=f"iiif/annotations/{baseFilename}-objects.json",
+            annopageid=f"https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{baseFilename}-objects.json",
             htrobjects=htrobjects,
             embedded=False,
         )
@@ -341,7 +348,7 @@ def getAnnotationPage(
     elif annopageid is None and annotationpath:
         _, filename = os.path.split(annotationpath)
         baseFilename, _ = os.path.splitext(filename)
-        annopageid = "iiif/annotations/{basefilename}.json"
+        annopageid = "https://lvanwissen.github.io/fricktalk-2023/iiif/annotations/{basefilename}.json"
     elif annotationpath:
         _, filename = os.path.split(annotationpath)
         baseFilename, _ = os.path.splitext(filename)
@@ -423,16 +430,20 @@ def getAnnotationPage(
                         properties = {
                             "label": matchedItemGetty["label"],
                             "transcription": matchedItemGetty["transcription"],
-                            "type": f'Schilderij [<a href="http://vocab.getty.edu/aat/300177435">AAT</a>]'
-                            if matchedItemGetty["type"] == "Schilderij"
-                            else matchedItemGetty["type"],
+                            "type": (
+                                f'Schilderij [<a href="http://vocab.getty.edu/aat/300177435">AAT</a>]'
+                                if matchedItemGetty["type"] == "Schilderij"
+                                else matchedItemGetty["type"]
+                            ),
                             "artist": matchedItemGetty["artist"],
                             "room": matchedItemGetty["room"],
                             "valuation": matchedItemGetty["valuation"],
                             "subject": matchedItemGetty["subject"],
-                            "iconclass": f'{matchedItemGetty["iconclass"]} [<a href="http://iconclass.org/{matchedItemGetty["iconclass"]}">ICONCLASS</a>]'
-                            if {matchedItemGetty["iconclass"]}
-                            else None,
+                            "iconclass": (
+                                f'{matchedItemGetty["iconclass"]} [<a href="http://iconclass.org/{matchedItemGetty["iconclass"]}">ICONCLASS</a>]'
+                                if {matchedItemGetty["iconclass"]}
+                                else None
+                            ),
                             "identifier": matchedItemGetty["identifier"],
                         }
 
@@ -544,9 +555,11 @@ def getAnnotationPage(
             properties = {
                 "Name": a["label"],
                 "URI": f'<a href="{a["id"]}">{a["id"]}</a>',
-                "Bredius excerpt": f'<a href="{a["bredius"][0]}">{a["bredius"][0]} ({a["bredius"][1]})</a>'
-                if a.get("bredius")
-                else None,
+                "Bredius excerpt": (
+                    f'<a href="{a["bredius"][0]}">{a["bredius"][0]} ({a["bredius"][1]})</a>'
+                    if a.get("bredius")
+                    else None
+                ),
             }
 
             value = "<br>\n".join(
@@ -730,4 +743,3 @@ if __name__ == "__main__":
         matcheditemsfile="data/2408_itemsmetadata.json",
         htrobjectsfile="data/2408_objectshtr.json",
     )
-
