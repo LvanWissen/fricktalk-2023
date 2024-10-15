@@ -121,12 +121,14 @@ def createManifest(
             {
                 "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png",
                 "type": "Image",
+                "format": "image/png",
             }
         ],
         "thumbnail": [
             {
                 "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png",
                 "type": "Image",
+                "format": "image/png",
             }
         ],
         "requiredStatement": {
