@@ -117,8 +117,17 @@ def createManifest(
                 "format": "text/html",
             }
         ],
-        "logo": [{"id": "assets/img/logo-golden-agents.png", "type": "Image"}],
-        "thumbnail": [{"id": "assets/img/logo-golden-agents.png"}],
+        "logo": [
+            {
+                "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png",
+                "type": "Image",
+            }
+        ],
+        "thumbnail": [
+            {
+                "id": "https://lvanwissen.github.io/fricktalk-2023/assets/img/logo-golden-agents.png"
+            }
+        ],
         "requiredStatement": {
             "label": {"en": ["Terms of Use"]},
             "value": {
